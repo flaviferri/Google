@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #576257;
+  max-width: 1280px;
+  margin: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* ------------ NAVBAR ------------ */
+header {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 8px 10px;
+}
+
+.list-navbar {
+  display: flex;
+}
+
+.list-navbar img {
+  width:40px;
+  height: 40px;
+}
+
+.list-navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.earbuds-color {
+  color: #1B72E9;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons > img {
+  height: 17px;
+  width: auto;
+}
+
+
+/* ------------ MAIN ------------ */
+main {
+  margin-right: 15px;
+}
+
+/****** Ir atrÃ¡s ******/
+.arrow {
+  height: 75px;
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+  align-items: end;
+}
+
+.arrow img {
+  height: 20px;
+  width: auto;
+}
+.arrow p {
+  margin-bottom: 4px;
+}
+
+/****** SecciÃ³n vistas del device ******/
+.container {
+  display: flex;
+} 
+
+.imgs-device {
+  width: 160px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.img-icono {
+  width: auto;
+  height: 35px;
+}
+
+/****** SecciÃ³n vista principal del device ******/
+.section-view-device {
+  width:60%;
+  display: flex;
+}
+
+.img-prev {
+  background-color:#F8F9FB;
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-prev img {
+  width: 45%;
+  height: auto;
+  object-fit: cover;
+}
+
+/****** SecciÃ³n detalles del device ******/
+.section-info-device {
+  padding-left: 30px;
+  width: 40%;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-device h1 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(53, 58, 73, 1);
+  margin-top: 0; 
+}
+
+.info-text {
+  font-size: 12px;
+}
+
+.info-price {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+/****** Cuadro delivery ******/
+.price {
+  background-color:#F8F9FB;
+  display: block;
+  padding: 15px;
+  margin-top: 110px;;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.price h2,
+.price br,
+.price input,
+.price button,
+.price img,
+.price p {
+  display: block;
+  width: 100%;
+}
+
+.price input {
+  width: 80px;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 20px;
+}
+
+.total {
+  font-size: 35px;
+  color: rgba(53, 58, 73, 1);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.price button {
+  text-align: center;  
+  background-color:#1B72E9;
+  border: none;
+  border-radius: 6px;
+  max-width: auto;
+  height: 50px;
+  color: white;
+}
+
+.price img {
+  height: 10px;
+  width: auto;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.buttons {
+  padding-top: 40px;
+  display: flex;
+  gap: 5px;
+  border-top: 1px solid black;
+}
+
+.delivery {
+  display: flex;
+  padding-top: 40px ;
+}
+
+.delivery p { 
+  font-weight: bold;
+}
+
+.number {
+  color: #1B72E9;
+  font-weight: bold;
+}
+
+/****** Paleta de colores ******/
+.set-color {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.box{
+  width: 160px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  
+}
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border-style:solid;
+  border-width: 1px;
+  border-color: rgba(88, 98, 107, 1);
+}
+
+.circle-blue {
+  background-color: rgba(159, 198, 232, 1);
+}
+
+.circle-beige {
+  background-color: rgba(232, 227, 222, 1);
+}
+
+.circle-darkgray {
+  background-color: rgba(76, 76, 78, 1);
+}
+
+.circle-lightgray {
+  background-color: rgba(210, 215, 218, 1);
+}
+
+.circle-lime {
+  background-color: rgba(223, 229, 183, 1);
+}
+
+.circle-orange {
+  background-color: rgba(227, 132, 114, 1);
+}
+
+/* ------------ FOOTER ------------ */
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap:30px;
+  background-color: #F8F9FB;
+  align-items: center;
+  color: #576257;
+}
+
+ .footer-icons {
+  margin-left: 140px;
+  display: flex;
+  gap: 10px;
+}
+
+.flag {
+  display: flex;
+  margin-right: 8px;
+}
+
+
+.footer-info {
+  margin-right: 140px;
+  display: flex;
+}
+
+.footer-info-list ul {
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  list-style: none;
+  font-size: 8px;
+}
+
+/******************* MEDIA QUERIES *******************/
+
+/* --------------- Tablet ---------------  */
+@media only screen and (max-width: 991px) {
+  .imgs-device {
+    display: none;
+  }
+
+ .container {
+  display: block;
+  padding-left: 15px;
+ }
+
+.section-view-device {
+  width: 100%;
+ }
+
+ .section-info-device {
+  width: 100%;
+  padding-left: 0;
+  margin-top: 50px;
+  position: relative;
+ }
+
+ .price {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  margin-top: 208px;
+ }
+
+ footer {
+  margin-top: 40%;
+ }
+ .footer-icons {
+  margin-left: 19px;
+  display: flex;
+  gap: 10px;
+}
+
+}
+
